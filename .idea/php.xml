@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/start/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/start/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/start/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/start/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/start/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/start/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/start/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/start/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/start/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/start/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/start/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/start/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/willdurand/jsonp-callback-validator" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/start/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/start/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/start/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/start/vendor/friendsofsymfony/jsrouting-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/start/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/start/vendor/composer" />
+      <path value="$PROJECT_DIR$/start/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/start/vendor/doctrine/dbal" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+</project>

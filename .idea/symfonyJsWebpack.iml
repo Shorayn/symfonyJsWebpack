@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/start/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/start/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/doctrine-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/doctrine-cache-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/doctrine-migrations-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/fig/link-util" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/psr/link" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/migrations" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/orm" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/twig/twig" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/persistence" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/jdorn/sql-formatter" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/reflection" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/sensio/distribution-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/ocramius/proxy-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/sensio/framework-extra-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/incenteev/composer-parameter-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/sensio/generator-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/sensiolabs/security-checker" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/monolog-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/willdurand/jsonp-callback-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/phpunit-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/polyfill-apcu" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/zendframework/zend-code" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/polyfill-intl-icu" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/friendsofsymfony/jsrouting-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/friendsofsymfony/user-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/polyfill-php56" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/polyfill-php70" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/polyfill-util" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/swiftmailer-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/symfony/symfony" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/collections" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/common" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/data-fixtures" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/start/var/cache/dev" />
+      <excludeFolder url="file://$MODULE_DIR$/start/var/sessions/dev" />
+      <excludeFolder url="file://$MODULE_DIR$/start/web/bundles" />
+      <excludeFolder url="file://$MODULE_DIR$/start/vendor" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
