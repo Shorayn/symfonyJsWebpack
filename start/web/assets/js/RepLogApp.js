@@ -4,8 +4,9 @@
 // SHORT: node ./node_modules/webpack/bin/webpack.js (configuration in webpack.config.js file)
 const Helper = require('./RepLogAppHelper');
 const $ = require('jquery');
+const swal = require('sweetalert2');
 
-(function(window, Routing, swal) {
+(function(window, Routing) {
 
     let HelperInstances = new WeakMap();
 
@@ -216,4 +217,4 @@ const $ = require('jquery');
 `;
 
     window.RepLogApp = RepLogApp;
-})(window, Routing, swal);
+})(window, Routing);
