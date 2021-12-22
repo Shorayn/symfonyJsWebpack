@@ -1,6 +1,11 @@
 'use strict';
 
-(function(window, $, Routing, swal) {
+// NOTE: USE node ./node_modules/webpack/bin/webpack.js web/assets/js/RepLogApp.js web/build/rep_log.js since Windows is bah (LONG VERSION)
+// SHORT: node ./node_modules/webpack/bin/webpack.js (configuration in webpack.config.js file)
+const Helper = require('./RepLogAppHelper');
+const $ = require('jquery');
+
+(function(window, Routing, swal) {
 
     let HelperInstances = new WeakMap();
 
@@ -61,7 +66,7 @@
             const $link = $(e.currentTarget);
 
             swal({
-                title: 'Delete this log?',
+                title: 'Delete this log????',
                 text: 'What? Did you not actually lift this?',
                 showCancelButton: true,
                 showLoaderOnConfirm: true,
@@ -194,40 +199,6 @@
         }
     }
 
-    /**
-     * A "private" object
-     */
-    class Helper {
-        constructor(repLogs) {
-            this.repLogs = repLogs;
-        }
-
-        calculateTotalWeight() {
-            return Helper._calculateWeights(
-                this.repLogs
-            );
-        }
-
-        getTotalWeightString(maxWeight = 500) {
-            let weight = this.calculateTotalWeight();
-
-            if (weight > maxWeight) {
-                weight = maxWeight + '+';
-            }
-
-            return weight + ' lbs';
-        }
-
-        static _calculateWeights(repLogs) {
-            let totalWeight = 0;
-            for (let repLog of repLogs) {
-                totalWeight += repLog.totalWeightLifted;
-            }
-
-            return totalWeight;
-        }
-    }
-
     const rowTemplate = (repLog) => `
 <tr data-weight="${repLog.totalWeightLifted}">
     <td>${repLog.itemLabel}</td>
@@ -245,4 +216,4 @@
 `;
 
     window.RepLogApp = RepLogApp;
-})(window, jQuery, Routing, swal);
+})(window, Routing, swal);
