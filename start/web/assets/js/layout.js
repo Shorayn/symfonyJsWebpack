@@ -5,6 +5,9 @@ const $ = require('jquery');
 // but bootstrap requires a global jquery variable
 require('bootstrap');
 
+// include this on every page to make sure Promise exists
+require('babel-polyfill');
+
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });

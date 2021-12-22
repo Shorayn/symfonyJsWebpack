@@ -16,8 +16,12 @@ module.exports = {
       rules: [
           {
               test: /\.js$/,
+              exclude: '/node/modules/',
               use: {
-                  loader: 'babel-loader'
+                  loader: 'babel-loader',
+                  options: {
+                      cacheDirectory: true
+                  }
               }
           }
       ]
