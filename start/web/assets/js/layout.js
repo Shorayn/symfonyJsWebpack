@@ -1,7 +1,7 @@
 'use strict';
 
 const $ = require('jquery');
-// Note: Bootstrap extends/modifies jequery, that's there is no assignement to a variable
+// Note: Bootstrap extends/modifies jquery, that's there is no assignement to a variable
 // but bootstrap requires a global jquery variable
 require('bootstrap');
 
