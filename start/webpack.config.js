@@ -34,6 +34,15 @@ module.exports = {
               ]
           },
           {
+              test: /\.scss$/,
+              use: [
+                  'style-loader',
+                  'css-loader',
+                  'resolve-url-loader',
+                  'sass-loader?sourceMap'
+              ]
+          },
+          {
               test: /\.(png|jpg|jpeg|gif|ico|svg)$/,
               use: [
                       {
