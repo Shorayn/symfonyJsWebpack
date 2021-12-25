@@ -1,3 +1,6 @@
+// NOTE: USE node ./node_modules/webpack/bin/webpack.js web/assets/js/RepLogApp.js web/build/rep_log.js since Windows is bah (LONG VERSION)
+// SHORT: node ./node_modules/webpack/bin/webpack.js (configuration in webpack.config.js file)
+
 const path = require('path');
 const webpack = require('webpack');
 const CopyPlugin = require("copy-webpack-plugin");

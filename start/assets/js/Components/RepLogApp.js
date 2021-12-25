@@ -1,12 +1,11 @@
 'use strict';
 
-// NOTE: USE node ./node_modules/webpack/bin/webpack.js web/assets/js/RepLogApp.js web/build/rep_log.js since Windows is bah (LONG VERSION)
-// SHORT: node ./node_modules/webpack/bin/webpack.js (configuration in webpack.config.js file)
 const Helper = require('./RepLogAppHelper');
 const $ = require('jquery');
 const swal = require('sweetalert2');
 require('sweetalert2/dist/sweetalert2.css');
 const Routing = require('./Routing');
+const _ = require('lodash/number');
 
 
 let HelperInstances = new WeakMap();
@@ -21,6 +20,7 @@ class RepLogApp {
         for (let repLog of initialRepLogs){
             this._addRow(repLog);
         }
+        this._clearForm();
 
         this.$wrapper.on(
             'click',
@@ -176,6 +176,8 @@ class RepLogApp {
 
         const $form = this.$wrapper.find(RepLogApp._selectors.newRepForm);
         $form[0].reset();
+
+        $form.find('[name="reps"]').val(_.random(1,10));
     }
 
     _addRow(repLog) {
