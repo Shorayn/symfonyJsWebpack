@@ -5,6 +5,11 @@
   "repository": "git@github.com:knpuniversity/javascript.git",
   "author": "Ryan Weaver <ryan@thatsquality.com>",
   "license": "MIT",
+  "scripts": {
+    "dev" : "node ./node_modules/cross-env/src/bin/cross-env.js NODE_ENV=dev node ./node_modules/webpack/bin/webpack.js",
+    "watch" : "node ./node_modules/cross-env/src/bin/cross-env.js NODE_ENV=dev node ./node_modules/webpack/bin/webpack.js  --watch",
+    "production" : "node ./node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production node ./node_modules/webpack/bin/webpack.js"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "7",
@@ -12,6 +17,7 @@
     "babel-preset-env": "^1.7.0",
     "bootstrap-sass": "^3.4.1",
     "copy-webpack-plugin": "4",
+    "cross-env": "^7.0.3",
     "css-loader": "0.28.4",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "0.11.2",

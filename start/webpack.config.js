@@ -3,6 +3,9 @@
 
 // Also can you the dev server: node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js
 
+// Use this node module to set environment for webpack
+// node ./node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production node ./node_modules/webpack/bin/webpack.js --watch
+
 const path = require('path');
 const webpack = require('webpack');
 const CopyPlugin = require("copy-webpack-plugin");
@@ -37,8 +40,7 @@ const resolveUrlLoader  = {
 const useDevServer = false;
 const publicPath = useDevServer ? 'http://localhost:8080/build/' : '/build/';
 
-
-module.exports = {
+const webpackConfig = {
   entry: {
       rep_log: './assets/js/rep_log.js',
       login: './assets/js/login.js',
@@ -140,3 +142,11 @@ module.exports = {
       headers: { 'Access-Control-Allow-Origin': '*' },
   }
 };
+
+if (process.env.NODE_ENV === 'production'){
+    webpackConfig.plugins.push(
+        new webpack.optimize.UglifyJsPlugin()
+    )
+}
+
+module.exports = webpackConfig;
