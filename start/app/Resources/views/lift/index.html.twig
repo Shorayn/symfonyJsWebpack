@@ -34,7 +34,11 @@
         </div>
         <div class="col-md-5">
             <div class="leaderboard">
-                <h2 class="text-center">
+                <h2 class="text-center js-custom-popover"
+                    data-toggle="popover"
+                    title="About the Leaderboard"
+                    data-content="Want to be the leader? Lift stuff"
+                >
                     <img class="dumbbell" src="{{ asset('build/static/dumbbell.png') }}" />
                     Leaderboard
                 </h2>
@@ -50,5 +54,15 @@
     {{ parent() }}
 
     <script src="{{ asset('build/rep_log.js') }}"></script>
+
+    <script>
+        $(document).ready(function (){
+            $('.js-custom-popover').popover({
+                trigger: 'hover',
+                placement: 'left'
+            });
+
+        });
+    </script>
 
 {% endblock %}
