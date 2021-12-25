@@ -1,6 +1,8 @@
 // NOTE: USE node ./node_modules/webpack/bin/webpack.js web/assets/js/RepLogApp.js web/build/rep_log.js since Windows is bah (LONG VERSION)
 // SHORT: node ./node_modules/webpack/bin/webpack.js (configuration in webpack.config.js file)
 
+// Also can you the dev server: node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js
+
 const path = require('path');
 const webpack = require('webpack');
 const CopyPlugin = require("copy-webpack-plugin");
@@ -121,5 +123,8 @@ module.exports = {
       })
   ],
 
-  devtool: 'inline-source-map'
+  devtool: 'inline-source-map',
+  devServer: {
+      contentBase: './web'
+  }
 };
