@@ -10,8 +10,10 @@ const path = require('path');
 const webpack = require('webpack');
 const CopyPlugin = require("copy-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 
 const useDevServer = false;
+const useVersioning = true;
 const publicPath = useDevServer ? 'http://localhost:8080/build/' : '/build/';
 const isProduction = process.env.NODE_ENV === 'production';
 const useSourceMaps = !isProduction;
@@ -53,7 +55,7 @@ const webpackConfig = {
   },
   output:{
       path: path.resolve(__dirname, 'web','build'),
-      filename: '[name].js',
+      filename: useVersioning ? '[name].[hash:6].js' : '[name].js',
       publicPath: publicPath,
   },
 
@@ -138,7 +140,14 @@ const webpackConfig = {
           minChunks: Infinity
       }),
 
-      new ExtractTextPlugin('[name].css'),
+      new ExtractTextPlugin(
+          useVersioning ? '[name].[contenthash:6].css' : '[name].css',
+      ),
+
+      new ManifestPlugin({
+          writeToFileEmit: true,
+          basePath: 'build/'
+      })
   ],
 
   devtool: useSourceMaps ? 'inline-source-map' : false,
